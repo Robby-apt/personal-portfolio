@@ -1,0 +1,47 @@
+// Nav section styling
+nav {
+	@include flexSpace;
+	margin: 1.25rem auto 0;
+	width: 100%;
+}
+
+.brand {
+	display: flex;
+}
+
+.brandLogo {
+	width: 3.125rem;
+	height: 3.125rem;
+	margin: 0 1.25rem 0 0;
+}
+
+.brandName {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: auto 0;
+}
+
+.navLinks {
+	display: flex;
+	margin: auto 0;
+
+	a {
+		font-size: 1.25rem;
+
+		&.active {
+			border-bottom: 0.125rem solid $primary-color;
+			color: unset;
+		}
+
+		&:not(.active) {
+			margin-left: 1.25rem;
+
+			&:hover {
+				border-bottom: 0.125rem dotted $primary-color;
+				color: unset;
+			}
+		}
+	}
+}
+
+// Intro section styling
