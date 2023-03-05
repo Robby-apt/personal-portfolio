@@ -1,0 +1,37 @@
+#projects {
+	flex-direction: column;
+
+	.slider {
+		width: 100%;
+
+		div {
+			background-color: blue;
+			// width: 100%;
+		}
+	}
+}
+
+.projectItem {
+	.project {
+		border: 1px solid white;
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		width: 78vw;
+
+		.projectDetails {
+			width: 40%;
+		}
+
+		.projectImage {
+			width: 60%;
+
+			img {
+				object-fit: cover;
+				object-position: center;
+				width: 100%;
+				min-width: 300px;
+			}
+		}
+	}
+}

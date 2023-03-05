@@ -1,0 +1,67 @@
+#about {
+	flex-direction: column;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+
+	.aboutMe {
+		border: 1px solid white;
+		display: flex;
+		flex-direction: column;
+		// width: 50%;
+	}
+
+	.skill {
+		margin: 0;
+		padding: 0;
+
+		.skillDisplay {
+			display: flex;
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+
+			h5 {
+				font-size: 1.25rem;
+				margin: 0 0 0.625rem 0;
+				text-decoration: underline;
+			}
+
+			.skillContainer {
+				display: flex;
+				flex-direction: row;
+				margin: 0;
+
+				.skillItem {
+					// border: 0.125rem dashed $primary-color;
+					display: flex;
+					flex-direction: column;
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+					width: 5.75rem;
+					height: 4.5rem;
+
+					&:not(:last-child) {
+						margin-right: 1.25rem;
+					}
+
+					img {
+						margin: 0 auto;
+						object-fit: cover;
+						object-position: center;
+						width: 2rem;
+						height: 2rem;
+					}
+
+					p {
+						font-size: 1rem;
+						margin: 0.625rem auto 0 auto;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
