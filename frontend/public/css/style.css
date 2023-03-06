@@ -18,11 +18,6 @@ a {
   text-decoration: none;
 }
 
-#personalContactForm input,
-#personalContactForm textarea {
-  color: black;
-}
-
 .section {
   padding: 0 2.5rem;
   display: flex;
@@ -45,7 +40,7 @@ a {
 .sectionSub {
   font-size: 1.25rem;
   text-align: center;
-  margin-top: 0.625rem;
+  margin: 0.625rem auto;
 }
 
 nav {
@@ -298,4 +293,123 @@ nav .navLinksResponsive a:hover {
      object-position: center;
   width: 100%;
   min-width: 300px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#contact .section {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 2.125rem);
+}
+
+.contactFormAndMedia {
+  display: flex;
+  filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
+  flex-direction: row;
+  margin: auto;
+  width: 50vw;
+}
+.contactFormAndMedia div {
+  width: 50%;
+}
+
+.contactMedia {
+  background-color: #2f2e41;
+  display: flex;
+  flex-direction: column;
+}
+.contactMedia .container {
+  margin: auto;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contactMedia .container p {
+  margin: 0;
+  padding: 0;
+}
+.contactMedia .container p:not(:first-child) {
+  margin-top: 1.25rem;
+}
+.contactMedia .container p:last-child {
+  text-align: center;
+}
+.contactMedia .container .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.25rem auto 0;
+}
+.contactMedia .container .socialMedia a {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.contactMedia .container .socialMedia a i {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contactForm {
+  background-color: #787780;
+  display: flex;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem auto;
+}
+.contactForm form .inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.25rem;
+  width: 100%;
+}
+.contactForm form .inputDiv label {
+  margin: 0 0 0.625rem;
+}
+.contactForm form .inputDiv input,
+.contactForm form .inputDiv textarea {
+  border: none;
+  border-radius: 0.625rem;
+  color: #000;
+  margin: 0;
+  padding: 0 0.625rem;
+}
+.contactForm form .inputDiv input:focus,
+.contactForm form .inputDiv textarea:focus {
+  filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
+  outline: 0.125rem solid #2f2e41;
+}
+.contactForm form button {
+  background: none;
+  border: 0.25rem solid #fff;
+  border-radius: 1.25rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0.3125rem 0.625rem;
+  transition: 0.1s ease-in-out;
+  width: 30%;
+}
+.contactForm form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+  display: flex;
+  min-height: 2.125rem;
+  margin: auto 0 0;
+  padding: 0.3125rem 0;
+  width: 100%;
+}
+footer p {
+  margin: auto;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

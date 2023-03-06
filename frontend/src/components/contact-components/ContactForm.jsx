@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 const validator = require('email-validator');
 
-function Form() {
+function ContactForm() {
 	const [contactData, setContactData] = useState({
 		name: ``,
 		email: ``,
@@ -53,7 +53,6 @@ function Form() {
 		});
 	}
 
-	console.log(contactData);
 	return (
 		<div className="contactForm">
 			<form id="personalContactForm" onSubmit={handleSubmit}>
@@ -65,6 +64,8 @@ function Form() {
 						id="name"
 						value={contactData.name}
 						onChange={handleChange}
+						minLength="2"
+						required
 					/>
 				</div>
 
@@ -76,6 +77,7 @@ function Form() {
 						id="email"
 						value={contactData.email}
 						onChange={handleChange}
+						required
 					/>
 				</div>
 
@@ -87,6 +89,8 @@ function Form() {
 						id="subject"
 						value={contactData.subject}
 						onChange={handleChange}
+						minLength="5"
+						required
 					/>
 				</div>
 
@@ -99,17 +103,15 @@ function Form() {
 						rows="5"
 						value={contactData.message}
 						onChange={handleChange}
+						minLength="5"
+						required
 					/>
 				</div>
 
-				{/* <input type="hidden" name="_gotcha" /> */}
-
 				<button type="submit">SEND</button>
-
-				<div id="statusNoti" className="sentNoti"></div>
 			</form>
 		</div>
 	);
 }
 
-export default Form;
+export default ContactForm;

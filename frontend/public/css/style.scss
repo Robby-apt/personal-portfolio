@@ -5,7 +5,7 @@
 $primary-bg-color: #2f2e41;
 $secondary-bg-color: #787780;
 $primary-color: #fff;
-$secondary-color: #a3a2c2;
+$secondary-color: #000;
 
 // global mixins
 @mixin applyPadding() {
@@ -32,13 +32,6 @@ a {
 	text-decoration: none;
 }
 
-#personalContactForm {
-	input,
-	textarea {
-		color: black;
-	}
-}
-
 .section {
 	@include applyPadding();
 	display: flex;
@@ -61,7 +54,7 @@ a {
 .sectionSub {
 	font-size: 1.25rem;
 	text-align: center;
-	margin-top: 0.625rem;
+	margin: 0.625rem auto;
 }
 
 // global nav styling
