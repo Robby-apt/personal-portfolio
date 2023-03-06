@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+#personalContactForm input,
+#personalContactForm textarea {
+  color: black;
+}
+
 .section {
   padding: 0 2.5rem;
   display: flex;
@@ -229,19 +234,62 @@ nav .navLinksResponsive a:hover {
 #projects .slider div {
   background-color: blue;
 }
+#projects .slider button {
+  opacity: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#projects .slider button img {
+  width: 2.5rem;
+}
+#projects .slider button .prevProject {
+  transform: rotate(180deg);
+}
 
 .projectItem .project {
   border: 1px solid white;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 78vw;
+  width: 95%;
 }
 .projectItem .project .projectDetails {
-  width: 40%;
+  border: 1px dashed white;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.projectItem .project .projectDetails h3 {
+  text-decoration: underline;
+}
+.projectItem .project .projectDetails .techStack {
+  display: flex;
+  flex-direction: row;
+  margin: 1.25rem 0;
+}
+.projectItem .project .projectDetails .techStack span {
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  color: #2f2e41;
+  padding: 0.3125rem 0.625rem;
+}
+.projectItem .project .projectDetails .techStack span:not(:first-child) {
+  margin-left: 0.625rem;
+}
+.projectItem .project .projectDetails a {
+  border-top: 0.125rem solid rgba(0, 0, 0, 0);
+  border-right: 0.125rem solid rgba(0, 0, 0, 0);
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0);
+  border-left: 0.125rem solid #fff;
+  margin: 0 auto 0 0;
+  padding: 0.3125rem 0.625rem;
+  transition: 0.1s ease-in-out;
+}
+.projectItem .project .projectDetails a:hover {
+  border: 0.125rem solid #fff;
 }
 .projectItem .project .projectImage {
-  width: 60%;
+  width: 65%;
 }
 .projectItem .project .projectImage img {
   -o-object-fit: cover;

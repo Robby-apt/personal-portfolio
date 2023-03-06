@@ -34,22 +34,33 @@ function Projects() {
 					data-bs-target="#carouselExampleFade"
 					data-bs-slide="prev"
 				>
-					<span
+					{/* <span
 						className="carousel-control-prev-icon"
 						aria-hidden="true"
-					></span>
+					></span> */}
+					<img
+						className="prevProject"
+						src="/images/slider-navi.svg"
+						alt="Previous project"
+					/>
 					<span className="visually-hidden">Previous</span>
 				</button>
+
 				<button
 					className="carousel-control-next"
 					type="button"
 					data-bs-target="#carouselExampleFade"
 					data-bs-slide="next"
 				>
-					<span
+					{/* <span
 						className="carousel-control-next-icon"
 						aria-hidden="true"
-					></span>
+					></span> */}
+					<img
+						className="nextProject"
+						src="/images/slider-navi.svg"
+						alt="Next project"
+					/>
 					<span className="visually-hidden">Next</span>
 				</button>
 			</div>

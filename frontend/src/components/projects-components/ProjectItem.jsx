@@ -7,14 +7,16 @@ function ProjectItem(props) {
 				<div className="projectDetails">
 					<h3>{props.projectName}</h3>
 
-					<p className="projectDescription">
-						{props.projectDescription}
-					</p>
 					<div className="techStack">
 						{props.projectStack.map((stack, index) => {
 							return <span key={index}>{stack}</span>;
 						})}
 					</div>
+
+					<div className="projectDescription">
+						<p>{props.projectDescription}</p>
+					</div>
+
 					<a
 						href={props.projectLink}
 						target="_blank"

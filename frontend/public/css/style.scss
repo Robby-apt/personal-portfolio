@@ -32,6 +32,13 @@ a {
 	text-decoration: none;
 }
 
+#personalContactForm {
+	input,
+	textarea {
+		color: black;
+	}
+}
+
 .section {
 	@include applyPadding();
 	display: flex;
