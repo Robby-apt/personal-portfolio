@@ -14,7 +14,9 @@ function ProjectItem(props) {
 					</div>
 
 					<div className="projectDescription">
-						<p>{props.projectDescription}</p>
+						{props.projectDescription.map((item, index) => {
+							return <p key={index}>{item}</p>;
+						})}
 					</div>
 
 					<a

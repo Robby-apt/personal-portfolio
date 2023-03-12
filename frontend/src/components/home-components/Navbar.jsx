@@ -16,7 +16,6 @@ function Navbar() {
 
 			<div className="navLinks">
 				<a href="#home">Home</a>
-				<a href="#about">About</a>
 				<a href="#projects">Projects</a>
 				<a href="#contact">Contact</a>
 			</div>
@@ -41,7 +40,6 @@ function Navbar() {
 
 			<div className="navLinksResponsive">
 				<a href="#home">Home</a>
-				<a href="#about">About</a>
 				<a href="#projects">Projects</a>
 				<a href="#contact">Contact</a>
 			</div>

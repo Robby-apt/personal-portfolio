@@ -34,13 +34,14 @@ a {
 
 .sectionTitle {
   font-size: 1.5rem;
+  margin: 0 auto 0.625rem;
   text-align: center;
 }
 
 .sectionSub {
   font-size: 1.25rem;
+  margin: 0 auto 0.625rem;
   text-align: center;
-  margin: 0.625rem auto;
 }
 
 nav {
@@ -111,6 +112,7 @@ nav .navLinksResponsive a:hover {
 
 #home {
   flex-direction: column;
+  padding-bottom: 1.25rem;
 }
 
 .intro {
@@ -139,19 +141,44 @@ nav .navLinksResponsive a:hover {
   font-size: 2.25rem;
   font-weight: bold;
 }
-.intro .introMessage .prompt {
+.intro .introMessage .aboutMe {
   display: flex;
   flex-direction: column;
-  margin: 1.25rem auto 0;
 }
-.intro .introMessage .prompt p {
+.intro .introMessage .aboutMe p {
+  margin: 0 0 1.25rem 0;
+}
+.intro .introMessage .aboutMe .callToAction {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 0;
+}
+.intro .introMessage .aboutMe .callToAction a {
+  font-weight: bold;
   margin: 0;
+  padding: 0.3125rem 0.625rem;
   text-align: center;
+  width: 100%;
 }
-.intro .introMessage .prompt a {
-  margin: 0.625rem auto 0;
+.intro .introMessage .aboutMe .callToAction a:first-child {
+  border: 0.125rem solid #fff;
+  margin-bottom: 1.25rem;
+}
+.intro .introMessage .aboutMe .callToAction a:first-child:hover {
+  background-color: #fff;
+  color: #2f2e41;
+}
+.intro .introMessage .aboutMe .callToAction a:last-child {
+  border-top: 0.125rem solid transparent;
+  border-left: 0.125rem solid transparent;
+  border-bottom: 0.125rem solid #fff;
+  border-right: 0.125rem solid transparent;
+}
+.intro .introMessage .aboutMe .callToAction a:last-child:hover {
+  border: 0.125rem solid #fff;
 }
 .intro .introGraphic {
+  display: flex;
   width: 50%;
 }
 .intro .introGraphic img {
@@ -162,72 +189,14 @@ nav .navLinksResponsive a:hover {
   width: 100%;
 }
 
-#about {
-  flex-direction: column;
+#projects {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-#about .aboutMe {
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-}
-#about .skill {
-  margin: 0;
-  padding: 0;
-}
-#about .skill .skillDisplay {
-  display: flex;
-  flex-direction: column;
-}
-#about .skill .skillDisplay:not(:last-child) {
-  margin-bottom: 1.25rem;
-}
-#about .skill .skillDisplay h5 {
-  font-size: 1.25rem;
-  margin: 0 0 0.625rem 0;
-  text-decoration: underline;
-}
-#about .skill .skillDisplay .skillContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-}
-#about .skill .skillDisplay .skillContainer .skillItem {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  width: 5.75rem;
-  height: 4.5rem;
-}
-#about .skill .skillDisplay .skillContainer .skillItem:not(:last-child) {
-  margin-right: 1.25rem;
-}
-#about .skill .skillDisplay .skillContainer .skillItem img {
-  margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 2rem;
-  height: 2rem;
-}
-#about .skill .skillDisplay .skillContainer .skillItem p {
-  font-size: 1rem;
-  margin: 0.625rem auto 0 auto;
-  text-align: center;
-}
-
-#projects {
   flex-direction: column;
 }
 #projects .slider {
+  margin: auto 0;
   width: 100%;
-}
-#projects .slider div {
-  background-color: blue;
 }
 #projects .slider button {
   opacity: 1;
@@ -242,19 +211,19 @@ nav .navLinksResponsive a:hover {
 }
 
 .projectItem .project {
-  border: 1px solid white;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
 }
 .projectItem .project .projectDetails {
-  border: 1px dashed white;
   display: flex;
   flex-direction: column;
+  margin: 0 1.25rem 0 0;
   width: 35%;
 }
 .projectItem .project .projectDetails h3 {
+  margin: 0;
   text-decoration: underline;
 }
 .projectItem .project .projectDetails .techStack {
@@ -271,22 +240,32 @@ nav .navLinksResponsive a:hover {
 .projectItem .project .projectDetails .techStack span:not(:first-child) {
   margin-left: 0.625rem;
 }
+.projectItem .project .projectDetails .projectDescription {
+  margin: 0 0 1.25rem 0;
+  min-height: 200px;
+}
 .projectItem .project .projectDetails a {
   border-top: 0.125rem solid rgba(0, 0, 0, 0);
   border-right: 0.125rem solid rgba(0, 0, 0, 0);
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0);
   border-left: 0.125rem solid #fff;
+  font-weight: bold;
   margin: 0 auto 0 0;
   padding: 0.3125rem 0.625rem;
   transition: 0.1s ease-in-out;
 }
 .projectItem .project .projectDetails a:hover {
+  background-color: #fff;
   border: 0.125rem solid #fff;
+  border-radius: 0.3125rem;
+  color: #2f2e41;
 }
 .projectItem .project .projectImage {
+  display: flex;
   width: 65%;
 }
 .projectItem .project .projectImage img {
+  border-radius: 1.25rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -295,18 +274,22 @@ nav .navLinksResponsive a:hover {
   min-width: 300px;
 }
 
+/* 3D gallery section styling */
 #contact {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 #contact .section {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 2.125rem);
 }
 
 .contactFormAndMedia {
+  border: 0.125rem solid #fff;
   display: flex;
   filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
   flex-direction: row;
@@ -412,4 +395,69 @@ footer {
 footer p {
   margin: auto;
   text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .projectItem .project {
+    flex-direction: column !important;
+  }
+  .projectItem .project .projectDetails,
+  .projectItem .project .projectImage {
+    width: 100%;
+  }
+  .projectItem .project .projectDetails {
+    margin-bottom: 0.625rem;
+  }
+  .contactFormAndMedia {
+    flex-direction: column-reverse !important;
+    min-width: 350px;
+  }
+  .contactFormAndMedia .contactMedia,
+  .contactFormAndMedia .contactForm {
+    width: 100%;
+    height: 490px;
+  }
+}
+@media (max-width: 1260px) {
+  .intro {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .intro .introGraphic {
+    width: 100%;
+  }
+  .intro .introGraphic img {
+    margin: 0 auto 1.25rem;
+    min-width: 250px;
+    width: 50%;
+  }
+  .intro .introMessage {
+    margin: 0 auto;
+    min-width: 350px;
+  }
+  .slider button:first-child {
+    margin-right: 0.625rem !important;
+  }
+  .slider button:last-child {
+    margin-left: 0.625rem !important;
+  }
+  .project {
+    width: 85% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .contactFormAndMedia {
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .introMessage {
+    width: 100% !important;
+  }
+  .introMessage div {
+    width: 100% !important;
+  }
+  .slider button img {
+    width: 1.5rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */

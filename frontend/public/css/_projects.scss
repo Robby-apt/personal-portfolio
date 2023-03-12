@@ -1,13 +1,15 @@
 #projects {
+	@include applyTopBottomPadding();
 	flex-direction: column;
 
 	.slider {
+		margin: auto 0;
 		width: 100%;
 
-		div {
-			background-color: blue;
-			// width: 78vw;
-		}
+		// div {
+		// background-color: blue;
+		// width: 78vw;
+		// }
 
 		button {
 			opacity: 1;
@@ -26,20 +28,20 @@
 
 .projectItem {
 	.project {
-		border: 1px solid white;
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
-		width: 95%;
+		width: 90%;
 
 		.projectDetails {
-			border: 1px dashed white;
+			// border: 1px dashed white;
 			display: flex;
 			flex-direction: column;
-			// margin: auto;
+			margin: 0 1.25rem 0 0;
 			width: 35%;
 
 			h3 {
+				margin: 0;
 				text-decoration: underline;
 			}
 
@@ -60,25 +62,36 @@
 				}
 			}
 
+			.projectDescription {
+				margin: 0 0 1.25rem 0;
+				min-height: 200px;
+			}
+
 			a {
 				border-top: 0.125rem solid rgba(0, 0, 0, 0);
 				border-right: 0.125rem solid rgba(0, 0, 0, 0);
 				border-bottom: 0.125rem solid rgba(0, 0, 0, 0);
 				border-left: 0.125rem solid $primary-color;
+				font-weight: bold;
 				margin: 0 auto 0 0;
 				padding: 0.3125rem 0.625rem;
 				transition: 0.1s ease-in-out;
 
 				&:hover {
+					background-color: $primary-color;
 					border: 0.125rem solid $primary-color;
+					border-radius: 0.3125rem;
+					color: $primary-bg-color;
 				}
 			}
 		}
 
 		.projectImage {
+			display: flex;
 			width: 65%;
 
 			img {
+				border-radius: 1.25rem;
 				object-fit: cover;
 				object-position: center;
 				width: 100%;
@@ -87,3 +100,47 @@
 		}
 	}
 }
+
+/* 3D gallery section styling */
+// .artProjects {
+// 	/* background-color: aqua; */
+// 	display: flex;
+// 	flex-direction: column;
+// 	margin: 0 auto;
+// 	padding: 0;
+// 	width: 100%;
+
+// 	div {
+// 		display: flex;
+// 		flex-direction: row;
+// 		width: 100%;
+
+// 		img {
+// 			border-radius: 0.625rem;
+// 			width: 56.25rem;
+// 			min-width: 350px;
+// 		}
+// 	}
+
+// 	.topRow {
+// 		justify-content: space-between;
+// 		margin: 0.625rem 0 1.25rem;
+// 		width: 100%;
+// 	}
+
+// 	.bottomRow {
+// 		display: flex;
+
+// 		img {
+// 			margin: 0 auto;
+// 		}
+// 	}
+// }
+
+// .bottomImg {
+// 	display: flex;
+// }
+
+// .galleryI .galleryBtnArea {
+// 	margin: 0 auto;
+// }

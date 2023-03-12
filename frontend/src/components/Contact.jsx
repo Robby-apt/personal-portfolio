@@ -6,7 +6,7 @@ import Footer from './contact-components/Footer';
 function Contact() {
 	return (
 		<div id="contact">
-			<div className="section lightSection">
+			<div className="section darkSection">
 				<h1 className="sectionTitle">Contact</h1>
 				<h2 className="sectionSub">Feel free to contact me</h2>
 

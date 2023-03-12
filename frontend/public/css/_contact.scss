@@ -4,6 +4,7 @@
 	min-height: 100vh;
 
 	.section {
+		@include applyTopBottomPadding();
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 2.125rem);
@@ -11,6 +12,7 @@
 }
 
 .contactFormAndMedia {
+	border: 0.125rem solid $primary-color;
 	display: flex;
 	filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
 	flex-direction: row;

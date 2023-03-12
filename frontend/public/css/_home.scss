@@ -1,5 +1,6 @@
 #home {
 	flex-direction: column;
+	padding-bottom: 1.25rem;
 }
 
 .intro {
@@ -34,23 +35,53 @@
 			}
 		}
 
-		.prompt {
+		.aboutMe {
 			display: flex;
 			flex-direction: column;
-			margin: 1.25rem auto 0;
 
 			p {
-				margin: 0;
-				text-align: center;
+				margin: 0 0 1.25rem 0;
 			}
 
-			a {
-				margin: 0.625rem auto 0;
+			.callToAction {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto 0 0;
+
+				a {
+					font-weight: bold;
+					margin: 0;
+					padding: 0.3125rem 0.625rem;
+					text-align: center;
+					width: 100%;
+
+					&:first-child {
+						border: 0.125rem solid $primary-color;
+						margin-bottom: 1.25rem;
+
+						&:hover {
+							background-color: $primary-color;
+							color: $primary-bg-color;
+						}
+					}
+
+					&:last-child {
+						border-top: 0.125rem solid transparent;
+						border-left: 0.125rem solid transparent;
+						border-bottom: 0.125rem solid $primary-color;
+						border-right: 0.125rem solid transparent;
+
+						&:hover {
+							border: 0.125rem solid $primary-color;
+						}
+					}
+				}
 			}
 		}
 	}
 
 	.introGraphic {
+		display: flex;
 		width: 50%;
 
 		img {

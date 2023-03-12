@@ -1,0 +1,93 @@
+// first breakpoint
+@media (max-width: 1400px) {
+	.projectItem {
+		.project {
+			flex-direction: column !important;
+
+			.projectDetails,
+			.projectImage {
+				width: 100%;
+			}
+
+			.projectDetails {
+				margin-bottom: 0.625rem;
+			}
+		}
+	}
+
+	.contactFormAndMedia {
+		flex-direction: column-reverse !important;
+		min-width: 350px;
+
+		.contactMedia,
+		.contactForm {
+			width: 100%;
+			height: 490px;
+		}
+	}
+}
+
+// second breakpoint
+@media (max-width: 1260px) {
+	.intro {
+		flex-direction: column-reverse;
+		width: 100%;
+
+		.introGraphic {
+			width: 100%;
+
+			img {
+				margin: 0 auto 1.25rem;
+				min-width: 250px;
+				width: 50%;
+			}
+		}
+
+		.introMessage {
+			margin: 0 auto;
+			min-width: 350px;
+		}
+	}
+
+	.slider {
+		button {
+			&:first-child {
+				margin-right: 0.625rem !important;
+			}
+
+			&:last-child {
+				margin-left: 0.625rem !important;
+			}
+		}
+	}
+
+	.project {
+		width: 85% !important;
+	}
+}
+
+// Third breakpoint
+@media (max-width: 1000px) {
+	.contactFormAndMedia {
+		width: 100%;
+	}
+}
+
+// Fourth breakpoint
+@media (max-width: 760px) {
+	.introMessage {
+		width: 100% !important;
+
+		div {
+			width: 100% !important;
+		}
+	}
+
+	.slider {
+		button {
+			img {
+				width: 1.5rem !important;
+			}
+		}
+	}
+}
