@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Navbar() {
-	const [isResponsiveNavVisible, setIsResponsiveNavVisible] = useState(false);
-
+function Navbar(props) {
 	return (
 		<nav>
-			<div className="brand">
+			<div className="brand" onClick={props.handleResNavClick}>
 				<img
 					src="/images/personal-logo-light.svg"
 					alt="Logo"
@@ -21,28 +19,36 @@ function Navbar() {
 			</div>
 
 			<div className="navIcons">
-				{isResponsiveNavVisible ? (
+				{props.isResponsiveNavVisible ? (
 					<i
 						className="fa-solid fa-xmark"
 						onClick={() => {
-							setIsResponsiveNavVisible(false);
+							props.setIsResponsiveNavVisible(false);
 						}}
 					/>
 				) : (
 					<i
 						className="fa-solid fa-bars"
 						onClick={() => {
-							setIsResponsiveNavVisible(true);
+							props.setIsResponsiveNavVisible(true);
 						}}
 					/>
 				)}
 			</div>
 
-			<div className="navLinksResponsive">
-				<a href="#home">Home</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
-			</div>
+			{props.isResponsiveNavVisible ? (
+				<div className="navLinksResponsive">
+					<a href="#home" onClick={props.handleResNavClick}>
+						Home
+					</a>
+					<a href="#projects" onClick={props.handleResNavClick}>
+						Projects
+					</a>
+					<a href="#contact" onClick={props.handleResNavClick}>
+						Contact
+					</a>
+				</div>
+			) : null}
 		</nav>
 	);
 }

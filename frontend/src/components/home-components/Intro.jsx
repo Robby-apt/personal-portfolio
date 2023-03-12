@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Intro() {
+function Intro(props) {
 	return (
-		<div className="intro">
+		<div className="intro" onClick={props.handleResNavClick}>
 			<div className="introMessage">
 				<div className="greeting">
 					<h2>Hi, I'm Robin Khaoya</h2>

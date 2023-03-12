@@ -75,6 +75,20 @@
 
 // Fourth breakpoint
 @media (max-width: 760px) {
+	nav {
+		.navLinks {
+			display: none;
+		}
+
+		.navIcons {
+			display: flex;
+		}
+
+		.navLinksResponsive {
+			display: flex;
+		}
+	}
+
 	.introMessage {
 		width: 100% !important;
 
@@ -87,6 +101,12 @@
 		button {
 			img {
 				width: 1.5rem !important;
+			}
+		}
+
+		.projectItem {
+			.project {
+				padding: 0 0.3125rem;
 			}
 		}
 	}

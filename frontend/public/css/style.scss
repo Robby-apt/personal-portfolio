@@ -90,7 +90,8 @@ nav {
 		}
 	}
 
-	.navLinks {
+	.navLinks,
+	.navLinksResponsive {
 		display: flex;
 		margin: auto 0;
 
@@ -102,7 +103,32 @@ nav {
 			}
 
 			&:hover {
-				font-size: 1.3rem;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.navLinksResponsive {
+		background-color: $primary-bg-color;
+		border-top: none;
+		border-right: 0.125rem solid $primary-color;
+		border-bottom: 0.125rem solid $primary-color;
+		border-left: 0.125rem solid $primary-color;
+		display: none;
+		flex-direction: column;
+		padding: 0.625rem;
+		position: absolute;
+		top: 100%;
+		right: 0;
+
+		a {
+			font-size: 1.25rem;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+
+			&:hover {
 				text-decoration: underline;
 			}
 		}
@@ -115,30 +141,6 @@ nav {
 
 		i {
 			font-size: 1.25rem;
-		}
-	}
-
-	.navLinksResponsive {
-		background-color: black;
-		display: none;
-		flex-direction: column;
-		padding: 0.625rem;
-		position: absolute;
-		top: 100%;
-		right: 0;
-		transform: translateX(calc(-50% + 0.625rem));
-
-		a {
-			font-size: 1.25rem;
-
-			&:not(:last-child) {
-				margin-bottom: 1.25rem;
-			}
-
-			&:hover {
-				font-size: 1.3rem;
-				text-decoration: underline;
-			}
 		}
 	}
 }
