@@ -8,11 +8,13 @@
 	width: 100%;
 
 	.introGraphic {
+		display: flex;
 		margin: 0 auto 1.25rem;
-		width: 50%;
-		min-width: fit-content;
+		width: 100%;
+		// min-width: fit-content;
 
 		img {
+			margin: auto;
 			object-fit: cover;
 			object-position: center;
 			width: 100%;

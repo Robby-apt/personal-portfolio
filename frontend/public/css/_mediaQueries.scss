@@ -1,26 +1,43 @@
 // first breakpoint
+@media (max-width: 760px) {
+	.techStack {
+		span {
+			padding: 0.3125rem !important;
+
+			&:not(:first-child) {
+				margin-left: 0.3125rem !important;
+			}
+		}
+	}
+
+	.projectItem {
+		.project {
+			padding: 0 0.3125rem;
+		}
+	}
+}
+
+// second breakpoint
 @media (min-width: 760px) {
 	nav {
 		.navLinks {
 			display: flex;
 		}
 
-		.resNavIcons {
-			display: none;
-		}
-
+		.resNavIcons,
 		.resNavLinks {
 			display: none;
 		}
 	}
 
-	// .introMessage {
-	// 	width: 100% !important;
-
-	// 	div {
-	// 		width: 100% !important;
-	// 	}
-	// }
+	.homeIntro {
+		.introMessage,
+		.introGraphic {
+			margin-right: auto;
+			margin-left: auto;
+			width: 50% !important;
+		}
+	}
 
 	.slider {
 		button {
@@ -29,16 +46,9 @@
 			}
 		}
 	}
-
-	// 	.projectItem {
-	// 		.project {
-	// 			padding: 0 0.3125rem;
-	// 		}
-	// 	}
-	// }
 }
 
-// second breakpoint
+// third breakpoint
 @media (min-width: 1000px) {
 	.intro {
 		margin-right: auto;
@@ -60,7 +70,7 @@
 	}
 }
 
-// Third breakpoint
+// fourth breakpoint
 @media (max-width: 1260px) {
 	.intro {
 		flex-direction: column-reverse;

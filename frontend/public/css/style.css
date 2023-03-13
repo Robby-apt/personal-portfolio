@@ -127,12 +127,12 @@ nav .resNavIcons {
   width: 100%;
 }
 .homeIntro .introGraphic {
+  display: flex;
   margin: 0 auto 1.25rem;
-  width: 50%;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  width: 100%;
 }
 .homeIntro .introGraphic img {
+  margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -277,13 +277,12 @@ nav .resNavIcons {
   width: 100%;
 }
 .projectItem .project .projectImage img {
-  border-radius: 1.25rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
 }
 
 #contact .sectionContainer {
@@ -351,6 +350,7 @@ nav .resNavIcons {
 .contactForm {
   background-color: #787780;
   display: flex;
+  padding: 0 1.25rem;
 }
 .contactForm form {
   display: flex;
@@ -361,7 +361,6 @@ nav .resNavIcons {
   display: flex;
   flex-direction: column;
   margin: 0 0 1.25rem;
-  width: 100%;
 }
 .contactForm form .inputDiv label {
   margin: 0 0 0.625rem;
@@ -408,15 +407,30 @@ footer p {
   text-align: center;
 }
 
+@media (max-width: 760px) {
+  .techStack span {
+    padding: 0.3125rem !important;
+  }
+  .techStack span:not(:first-child) {
+    margin-left: 0.3125rem !important;
+  }
+  .projectItem .project {
+    padding: 0 0.3125rem;
+  }
+}
 @media (min-width: 760px) {
   nav .navLinks {
     display: flex;
   }
-  nav .resNavIcons {
-    display: none;
-  }
+  nav .resNavIcons,
   nav .resNavLinks {
     display: none;
+  }
+  .homeIntro .introMessage,
+  .homeIntro .introGraphic {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50% !important;
   }
   .slider button img {
     width: 1.5rem !important;
