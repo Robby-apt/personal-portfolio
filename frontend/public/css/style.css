@@ -278,6 +278,7 @@ nav .resNavIcons {
   width: 100%;
 }
 .projectItem .project .projectImage img {
+  border-radius: 0.3125rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -296,6 +297,7 @@ nav .resNavIcons {
 
 .contactFormAndMedia {
   border: 0.125rem solid #fff;
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
@@ -305,17 +307,17 @@ nav .resNavIcons {
 .contactFormAndMedia .contactMedia,
 .contactFormAndMedia .contactForm {
   width: 100%;
-  min-height: 490px;
 }
 
 .contactMedia {
   background-color: #2f2e41;
+  border-radius: 0.625rem 0.625rem 0 0;
   display: flex;
 }
 .contactMedia .container {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 1.25rem auto;
   padding: 0;
   width: -moz-fit-content;
   width: fit-content;
@@ -350,6 +352,7 @@ nav .resNavIcons {
 
 .contactForm {
   background-color: #787780;
+  border-radius: 0 0 0.625rem 0.625rem;
   display: flex;
   padding: 0 1.25rem;
 }
@@ -369,7 +372,7 @@ nav .resNavIcons {
 .contactForm form .inputDiv input,
 .contactForm form .inputDiv textarea {
   border: none;
-  border-radius: 0.625rem;
+  border-radius: 0.3125rem;
   color: #000;
   margin: 0;
   padding: 0 0.625rem;
@@ -383,7 +386,7 @@ nav .resNavIcons {
 .contactForm form button {
   background: none;
   border: 0.25rem solid #fff;
-  border-radius: 1.25rem;
+  border-radius: 0.625rem;
   font-weight: bold;
   margin: 0 auto;
   padding: 0.3125rem 0.625rem;
@@ -514,5 +517,14 @@ footer p {
   .contactFormAndMedia .contactMedia,
   .contactFormAndMedia .contactForm {
     width: 50% !important;
+  }
+  .contactFormAndMedia .contactMedia {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  .contactFormAndMedia .contactMedia .container {
+    margin: auto !important;
+  }
+  .contactFormAndMedia .contactForm {
+    border-radius: 0 0.625rem 0.625rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

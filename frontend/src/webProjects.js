@@ -32,7 +32,7 @@ const webProjects = [
 			`It is built using EJS, SCSS, Bootstrap, NodeJS and Express.`,
 			`It has a landing page, a portfolio page to showcase some of his art and a contact page.`,
 		],
-		projectLink: `#`,
+		projectLink: `https://arthur-chege.onrender.com`,
 		projectImg: `/images/webui-projects/arthur.png`,
 		projectClass: `projectItem carousel-item`,
 	},

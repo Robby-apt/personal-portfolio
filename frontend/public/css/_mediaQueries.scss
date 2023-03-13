@@ -155,5 +155,17 @@
 		.contactForm {
 			width: 50% !important;
 		}
+
+		.contactMedia {
+			border-radius: 0.625rem 0 0 0.625rem;
+
+			.container {
+				margin: auto !important;
+			}
+		}
+
+		.contactForm {
+			border-radius: 0 0.625rem 0.625rem 0;
+		}
 	}
 }
