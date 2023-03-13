@@ -10,7 +10,11 @@
 			}
 
 			.projectDetails {
-				margin-bottom: 0.625rem;
+				margin: 0 auto 0.625rem;
+			}
+
+			.projectImage {
+				margin: 0 auto;
 			}
 		}
 	}
@@ -76,6 +80,9 @@
 // Fourth breakpoint
 @media (max-width: 760px) {
 	nav {
+		margin-right: auto;
+		margin-left: auto;
+
 		.navLinks {
 			display: none;
 		}
@@ -89,12 +96,23 @@
 		}
 	}
 
+	.intro {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.introMessage {
 		width: 100% !important;
 
 		div {
 			width: 100% !important;
 		}
+	}
+
+	.carousel-inner,
+	.projectItem,
+	.project {
+		margin: 0 auto;
 	}
 
 	.slider {
@@ -109,5 +127,9 @@
 				padding: 0 0.3125rem;
 			}
 		}
+	}
+
+	.contactFormAndMedia {
+		margin: 0 auto !important;
 	}
 }

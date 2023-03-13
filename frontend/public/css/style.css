@@ -50,6 +50,7 @@ nav {
   justify-content: space-between;
   margin: 0 0 1.25rem 0;
   position: relative;
+  width: 100%;
 }
 nav .brand {
   display: flex;
@@ -411,7 +412,10 @@ footer p {
     width: 100%;
   }
   .projectItem .project .projectDetails {
-    margin-bottom: 0.625rem;
+    margin: 0 auto 0.625rem;
+  }
+  .projectItem .project .projectImage {
+    margin: 0 auto;
   }
   .contactFormAndMedia {
     flex-direction: column-reverse !important;
@@ -456,6 +460,10 @@ footer p {
   }
 }
 @media (max-width: 760px) {
+  nav {
+    margin-right: auto;
+    margin-left: auto;
+  }
   nav .navLinks {
     display: none;
   }
@@ -465,16 +473,28 @@ footer p {
   nav .navLinksResponsive {
     display: flex;
   }
+  .intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
   .introMessage {
     width: 100% !important;
   }
   .introMessage div {
     width: 100% !important;
   }
+  .carousel-inner,
+  .projectItem,
+  .project {
+    margin: 0 auto;
+  }
   .slider button img {
     width: 1.5rem !important;
   }
   .slider .projectItem .project {
     padding: 0 0.3125rem;
+  }
+  .contactFormAndMedia {
+    margin: 0 auto !important;
   }
 }/*# sourceMappingURL=style.css.map */
