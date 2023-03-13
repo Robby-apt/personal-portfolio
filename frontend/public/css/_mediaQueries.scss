@@ -72,6 +72,18 @@
 
 // Third breakpoint
 @media (max-width: 1000px) {
+	.intro {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.carousel-inner,
+	.projectItem,
+	.project,
+	.contactFormAndMedia {
+		margin: 0 auto;
+	}
+
 	.contactFormAndMedia {
 		width: 100%;
 	}
@@ -96,23 +108,12 @@
 		}
 	}
 
-	.intro {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
 	.introMessage {
 		width: 100% !important;
 
 		div {
 			width: 100% !important;
 		}
-	}
-
-	.carousel-inner,
-	.projectItem,
-	.project {
-		margin: 0 auto;
 	}
 
 	.slider {
@@ -127,9 +128,5 @@
 				padding: 0 0.3125rem;
 			}
 		}
-	}
-
-	.contactFormAndMedia {
-		margin: 0 auto !important;
 	}
 }

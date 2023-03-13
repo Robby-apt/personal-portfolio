@@ -455,6 +455,16 @@ footer p {
   }
 }
 @media (max-width: 1000px) {
+  .intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .carousel-inner,
+  .projectItem,
+  .project,
+  .contactFormAndMedia {
+    margin: 0 auto;
+  }
   .contactFormAndMedia {
     width: 100%;
   }
@@ -473,28 +483,16 @@ footer p {
   nav .navLinksResponsive {
     display: flex;
   }
-  .intro {
-    margin-right: auto;
-    margin-left: auto;
-  }
   .introMessage {
     width: 100% !important;
   }
   .introMessage div {
     width: 100% !important;
   }
-  .carousel-inner,
-  .projectItem,
-  .project {
-    margin: 0 auto;
-  }
   .slider button img {
     width: 1.5rem !important;
   }
   .slider .projectItem .project {
     padding: 0 0.3125rem;
-  }
-  .contactFormAndMedia {
-    margin: 0 auto !important;
   }
 }/*# sourceMappingURL=style.css.map */
