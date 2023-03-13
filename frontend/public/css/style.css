@@ -81,6 +81,7 @@ nav .brand h1 {
 }
 nav .navLinks {
   display: none;
+  margin: auto 0;
 }
 nav .navLinks a {
   font-size: 1.25rem;
@@ -372,6 +373,7 @@ nav .resNavIcons {
   color: #000;
   margin: 0;
   padding: 0 0.625rem;
+  width: 100%;
 }
 .contactForm form .inputDiv input:focus,
 .contactForm form .inputDiv textarea:focus {
@@ -404,4 +406,86 @@ footer {
 footer p {
   margin: auto;
   text-align: center;
+}
+
+@media (min-width: 760px) {
+  nav .navLinks {
+    display: flex;
+  }
+  nav .resNavIcons {
+    display: none;
+  }
+  nav .resNavLinks {
+    display: none;
+  }
+  .slider button img {
+    width: 1.5rem !important;
+  }
+}
+@media (min-width: 1000px) {
+  .intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .carousel-inner,
+  .projectItem,
+  .project,
+  .contactFormAndMedia {
+    margin: 0 auto;
+  }
+  .introGraphic,
+  .contactFormAndMedia {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1260px) {
+  .intro {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .intro .introGraphic {
+    width: 100%;
+  }
+  .intro .introGraphic img {
+    margin: 0 auto 1.25rem;
+    min-width: 250px;
+    width: 50%;
+  }
+  .intro .introMessage {
+    margin: 0 auto;
+    min-width: 350px;
+  }
+  .slider button:first-child {
+    margin-right: 0.625rem !important;
+  }
+  .slider button:last-child {
+    margin-left: 0.625rem !important;
+  }
+  .project {
+    width: 85% !important;
+  }
+}
+@media (max-width: 1400px) {
+  .projectItem .project {
+    flex-direction: column !important;
+  }
+  .projectItem .project .projectDetails,
+  .projectItem .project .projectImage {
+    width: 100%;
+  }
+  .projectItem .project .projectDetails {
+    margin: 0 auto 0.625rem;
+  }
+  .projectItem .project .projectImage {
+    margin: 0 auto;
+  }
+  .contactFormAndMedia {
+    flex-direction: column-reverse !important;
+    min-width: 350px;
+  }
+  .contactFormAndMedia .contactMedia,
+  .contactFormAndMedia .contactForm {
+    width: 100%;
+    height: 490px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,133 @@
+// first breakpoint
+@media (min-width: 760px) {
+	nav {
+		.navLinks {
+			display: flex;
+		}
+
+		.resNavIcons {
+			display: none;
+		}
+
+		.resNavLinks {
+			display: none;
+		}
+	}
+
+	// .introMessage {
+	// 	width: 100% !important;
+
+	// 	div {
+	// 		width: 100% !important;
+	// 	}
+	// }
+
+	.slider {
+		button {
+			img {
+				width: 1.5rem !important;
+			}
+		}
+	}
+
+	// 	.projectItem {
+	// 		.project {
+	// 			padding: 0 0.3125rem;
+	// 		}
+	// 	}
+	// }
+}
+
+// second breakpoint
+@media (min-width: 1000px) {
+	.intro {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.carousel-inner,
+	.projectItem,
+	.project,
+	.contactFormAndMedia {
+		margin: 0 auto;
+	}
+
+	// .intro,
+	// .introMessage,
+	.introGraphic,
+	.contactFormAndMedia {
+		width: 100% !important;
+	}
+}
+
+// Third breakpoint
+@media (max-width: 1260px) {
+	.intro {
+		flex-direction: column-reverse;
+		width: 100%;
+
+		.introGraphic {
+			width: 100%;
+
+			img {
+				margin: 0 auto 1.25rem;
+				min-width: 250px;
+				width: 50%;
+			}
+		}
+
+		.introMessage {
+			margin: 0 auto;
+			min-width: 350px;
+		}
+	}
+
+	.slider {
+		button {
+			&:first-child {
+				margin-right: 0.625rem !important;
+			}
+
+			&:last-child {
+				margin-left: 0.625rem !important;
+			}
+		}
+	}
+
+	.project {
+		width: 85% !important;
+	}
+}
+
+// Fourth breakpoint
+@media (max-width: 1400px) {
+	.projectItem {
+		.project {
+			flex-direction: column !important;
+
+			.projectDetails,
+			.projectImage {
+				width: 100%;
+			}
+
+			.projectDetails {
+				margin: 0 auto 0.625rem;
+			}
+
+			.projectImage {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.contactFormAndMedia {
+		flex-direction: column-reverse !important;
+		min-width: 350px;
+
+		.contactMedia,
+		.contactForm {
+			width: 100%;
+			height: 490px;
+		}
+	}
+}
