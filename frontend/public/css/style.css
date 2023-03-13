@@ -301,12 +301,10 @@ nav .resNavIcons {
   filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
   margin: 0 auto !important;
   width: 100%;
-  min-width: 350px;
 }
 .contactFormAndMedia .contactMedia,
 .contactFormAndMedia .contactForm {
   width: 100%;
-  min-width: 350px;
   min-height: 490px;
 }
 
