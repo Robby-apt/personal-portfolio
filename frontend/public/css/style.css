@@ -226,6 +226,7 @@ nav .resNavIcons {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 0.3125rem;
   width: 100%;
 }
 .projectItem .project .projectDetails {
@@ -298,12 +299,13 @@ nav .resNavIcons {
   display: flex;
   flex-direction: column;
   filter: drop-shadow(0.3125rem 0.3125rem 0.25rem rgba(0, 0, 0, 0.25));
-  margin: auto;
+  margin: 0 auto !important;
   width: 100%;
 }
 .contactFormAndMedia .contactMedia,
 .contactFormAndMedia .contactForm {
   width: 100%;
+  min-width: 350px;
   min-height: 490px;
 }
 
@@ -411,11 +413,19 @@ footer p {
   .techStack span {
     padding: 0.3125rem !important;
   }
-  .techStack span:not(:first-child) {
-    margin-left: 0.3125rem !important;
+  .techStack span:first-child {
+    border-radius: 0.3125rem 0 0 0.3125rem !important;
   }
-  .projectItem .project {
-    padding: 0 0.3125rem;
+  .techStack span:not(:first-child) {
+    border-left: 0.125rem solid #787780;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+  }
+  .techStack span:last-child {
+    border-radius: 0 0.3125rem 0.3125rem 0 !important;
+  }
+  .contactFormAndMedia {
+    margin: 0 auto !important;
   }
 }
 @media (min-width: 760px) {
@@ -435,39 +445,35 @@ footer p {
   .slider button img {
     width: 1.5rem !important;
   }
+  .slider button:first-child {
+    margin-right: 0.625rem !important;
+  }
+  .slider button:last-child {
+    margin-left: 0.625rem !important;
+  }
 }
 @media (min-width: 1000px) {
-  .intro {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .carousel-inner,
-  .projectItem,
-  .project,
   .contactFormAndMedia {
-    margin: 0 auto;
-  }
-  .introGraphic,
-  .contactFormAndMedia {
-    width: 100% !important;
+    width: 50vw;
   }
 }
-@media (max-width: 1260px) {
-  .intro {
-    flex-direction: column-reverse;
-    width: 100%;
+@media (min-width: 1260px) {
+  .homeIntro {
+    flex-direction: row-reverse;
+    margin: auto;
   }
-  .intro .introGraphic {
-    width: 100%;
-  }
-  .intro .introGraphic img {
-    margin: 0 auto 1.25rem;
-    min-width: 250px;
+  .homeIntro .introMessage,
+  .homeIntro .introGraphic {
     width: 50%;
   }
-  .intro .introMessage {
-    margin: 0 auto;
-    min-width: 350px;
+  .homeIntro .introMessage {
+    margin: auto 1.25rem auto 0;
+  }
+  .homeIntro .introMessage .aboutMe .callToAction {
+    margin: 0 auto 0 0;
+  }
+  .homeIntro .introGraphic {
+    margin: auto !important;
   }
   .slider button:first-child {
     margin-right: 0.625rem !important;
@@ -479,27 +485,35 @@ footer p {
     width: 85% !important;
   }
 }
-@media (max-width: 1400px) {
-  .projectItem .project {
-    flex-direction: column !important;
+@media (min-width: 1400px) {
+  .slider button img {
+    width: 2.5rem !important;
   }
-  .projectItem .project .projectDetails,
-  .projectItem .project .projectImage {
-    width: 100%;
+  .projectItem .project {
+    flex-direction: row !important;
   }
   .projectItem .project .projectDetails {
-    margin: 0 auto 0.625rem;
+    margin: 0 1.25rem 0 0;
+    width: 35% !important;
   }
   .projectItem .project .projectImage {
     margin: 0 auto;
+    width: 65% !important;
+  }
+  .projectItem .project .projectImage img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+    -o-object-position: center !important;
+       object-position: center !important;
+    width: 100% !important;
   }
   .contactFormAndMedia {
-    flex-direction: column-reverse !important;
-    min-width: 350px;
+    flex-direction: row !important;
+    margin: auto !important;
+    width: 50vw !important;
   }
   .contactFormAndMedia .contactMedia,
   .contactFormAndMedia .contactForm {
-    width: 100%;
-    height: 490px;
+    width: 50% !important;
   }
 }/*# sourceMappingURL=style.css.map */

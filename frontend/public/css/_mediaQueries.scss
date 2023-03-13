@@ -4,16 +4,24 @@
 		span {
 			padding: 0.3125rem !important;
 
+			&:first-child {
+				border-radius: 0.3125rem 0 0 0.3125rem !important;
+			}
+
 			&:not(:first-child) {
-				margin-left: 0.3125rem !important;
+				border-left: 0.125rem solid $secondary-bg-color;
+				border-radius: 0 !important;
+				margin-left: 0 !important;
+			}
+
+			&:last-child {
+				border-radius: 0 0.3125rem 0.3125rem 0 !important;
 			}
 		}
 	}
 
-	.projectItem {
-		.project {
-			padding: 0 0.3125rem;
-		}
+	.contactFormAndMedia {
+		margin: 0 auto !important;
 	}
 }
 
@@ -44,51 +52,48 @@
 			img {
 				width: 1.5rem !important;
 			}
+
+			&:first-child {
+				margin-right: 0.625rem !important;
+			}
+
+			&:last-child {
+				margin-left: 0.625rem !important;
+			}
 		}
 	}
 }
 
 // third breakpoint
 @media (min-width: 1000px) {
-	.intro {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.carousel-inner,
-	.projectItem,
-	.project,
 	.contactFormAndMedia {
-		margin: 0 auto;
-	}
-
-	// .intro,
-	// .introMessage,
-	.introGraphic,
-	.contactFormAndMedia {
-		width: 100% !important;
+		width: 50vw;
 	}
 }
 
 // fourth breakpoint
-@media (max-width: 1260px) {
-	.intro {
-		flex-direction: column-reverse;
-		width: 100%;
+@media (min-width: 1260px) {
+	.homeIntro {
+		flex-direction: row-reverse;
+		margin: auto;
 
+		.introMessage,
 		.introGraphic {
-			width: 100%;
-
-			img {
-				margin: 0 auto 1.25rem;
-				min-width: 250px;
-				width: 50%;
-			}
+			width: 50%;
 		}
 
 		.introMessage {
-			margin: 0 auto;
-			min-width: 350px;
+			margin: auto 1.25rem auto 0;
+
+			.aboutMe {
+				.callToAction {
+					margin: 0 auto 0 0;
+				}
+			}
+		}
+
+		.introGraphic {
+			margin: auto !important;
 		}
 	}
 
@@ -109,35 +114,46 @@
 	}
 }
 
-// Fourth breakpoint
-@media (max-width: 1400px) {
+// fifth breakpoint
+@media (min-width: 1400px) {
+	.slider {
+		button {
+			img {
+				width: 2.5rem !important;
+			}
+		}
+	}
+
 	.projectItem {
 		.project {
-			flex-direction: column !important;
-
-			.projectDetails,
-			.projectImage {
-				width: 100%;
-			}
+			flex-direction: row !important;
 
 			.projectDetails {
-				margin: 0 auto 0.625rem;
+				margin: 0 1.25rem 0 0;
+				width: 35% !important;
 			}
 
 			.projectImage {
 				margin: 0 auto;
+				width: 65% !important;
+
+				img {
+					object-fit: contain !important;
+					object-position: center !important;
+					width: 100% !important;
+				}
 			}
 		}
 	}
 
 	.contactFormAndMedia {
-		flex-direction: column-reverse !important;
-		min-width: 350px;
+		flex-direction: row !important;
+		margin: auto !important;
+		width: 50vw !important;
 
 		.contactMedia,
 		.contactForm {
-			width: 100%;
-			height: 490px;
+			width: 50% !important;
 		}
 	}
 }
