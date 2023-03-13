@@ -1,31 +1,33 @@
-// Import font
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-// declare variables
+// mixins
+@mixin applyHorizontalPadding() {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+@mixin applyVerticalPadding() {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+// global variables
 $primary-bg-color: #2f2e41;
 $secondary-bg-color: #787780;
 $primary-color: #fff;
 $secondary-color: #000;
 
-// global mixins
-@mixin applyPadding() {
-	padding: 0 2.5rem;
-}
-
-@mixin applyTopBottomPadding() {
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
-}
-
 // global styling
 * {
 	color: $primary-color;
 	font-family: Roboto, sans-serif;
-	transition: 0.25s ease-in-out;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	// box-sizing: border-box;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -38,9 +40,21 @@ a {
 }
 
 .section {
-	@include applyPadding();
 	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
+	width: 100vw;
+
+	.sectionContainer {
+		@include applyHorizontalPadding();
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.fullSizeContainer {
+		min-height: 100vh;
+	}
 }
 
 .darkSection {
@@ -63,27 +77,24 @@ a {
 	text-align: center;
 }
 
-// global nav styling
 nav {
 	display: flex;
-	color: $primary-color;
-	justify-content: space-between;
-	margin: 0 0 1.25rem 0;
+	margin: 0 0 1.25rem;
 	position: relative;
-	width: 100%;
+	width: 100% !important;
 
 	.brand {
 		display: flex;
-		margin: 1.25rem auto 0.625rem 0;
+		margin: 0 auto 0 0;
+		width: fit-content;
 
 		img {
 			margin: auto 1.25rem auto 0;
-			padding: 0;
 			width: 3.125rem;
 			height: 3.125rem;
 		}
 
-		p {
+		h1 {
 			font-size: 1.5rem;
 			font-weight: bold;
 			margin: auto 0;
@@ -91,10 +102,8 @@ nav {
 		}
 	}
 
-	.navLinks,
-	.navLinksResponsive {
-		display: flex;
-		margin: auto 0;
+	.navLinks {
+		display: none;
 
 		a {
 			font-size: 1.25rem;
@@ -109,18 +118,17 @@ nav {
 		}
 	}
 
-	.navLinksResponsive {
+	.resNavLinks {
 		background-color: $primary-bg-color;
-		border-top: none;
 		border-right: 0.125rem solid $primary-color;
 		border-bottom: 0.125rem solid $primary-color;
 		border-left: 0.125rem solid $primary-color;
-		display: none;
+		display: flex;
 		flex-direction: column;
-		padding: 0.625rem;
+		padding: 0.3125rem 0.625rem;
 		position: absolute;
-		top: 100%;
 		right: 0;
+		top: 100%;
 
 		a {
 			font-size: 1.25rem;
@@ -135,25 +143,20 @@ nav {
 		}
 	}
 
-	.navIcons {
-		display: none;
+	.resNavIcons {
 		margin: auto 0;
-		position: relative;
-
-		i {
-			font-size: 1.25rem;
-		}
 	}
 }
 
-// Home section styling
+// import section styling
+// home section styling
 @import '_home';
 
-// Projects section styling
+// projects section styling
 @import '_projects';
 
-// Contact section styling
+// contact section styling
 @import '_contact';
 
-// Media queries
+// mediaQueries
 @import '_mediaQueries';

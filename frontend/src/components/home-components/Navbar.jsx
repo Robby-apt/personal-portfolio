@@ -3,13 +3,12 @@ import React from 'react';
 function Navbar(props) {
 	return (
 		<nav>
-			<div className="brand" onClick={props.handleResNavClick}>
+			<div className="brand" onClick={props.hideResNav}>
 				<img
 					src="/images/personal-logo-light.svg"
-					alt="Logo"
-					className="brandLogo"
+					alt="Robin Khaoya logo"
 				/>
-				<p className="brandName">Robin Khaoya</p>
+				<h1>Robin Khaoya</h1>
 			</div>
 
 			<div className="navLinks">
@@ -18,33 +17,33 @@ function Navbar(props) {
 				<a href="#contact">Contact</a>
 			</div>
 
-			<div className="navIcons">
-				{props.isResponsiveNavVisible ? (
+			<div className="resNavIcons">
+				{props.isResNavActive ? (
 					<i
 						className="fa-solid fa-xmark"
 						onClick={() => {
-							props.setIsResponsiveNavVisible(false);
+							props.setIsResNavActive(false);
 						}}
 					/>
 				) : (
 					<i
 						className="fa-solid fa-bars"
 						onClick={() => {
-							props.setIsResponsiveNavVisible(true);
+							props.setIsResNavActive(true);
 						}}
 					/>
 				)}
 			</div>
 
-			{props.isResponsiveNavVisible ? (
-				<div className="navLinksResponsive">
-					<a href="#home" onClick={props.handleResNavClick}>
+			{props.isResNavActive ? (
+				<div className="resNavLinks">
+					<a href="#home" onClick={props.hideResNav}>
 						Home
 					</a>
-					<a href="#projects" onClick={props.handleResNavClick}>
+					<a href="#projects" onClick={props.hideResNav}>
 						Projects
 					</a>
-					<a href="#contact" onClick={props.handleResNavClick}>
+					<a href="#contact" onClick={props.hideResNav}>
 						Contact
 					</a>
 				</div>

@@ -30,10 +30,6 @@ function ProjectSlider() {
 				data-bs-target="#carouselExampleFade"
 				data-bs-slide="prev"
 			>
-				{/* <span
-						className="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span> */}
 				<img
 					className="prevProject"
 					src="/images/slider-navi.svg"
@@ -48,10 +44,6 @@ function ProjectSlider() {
 				data-bs-target="#carouselExampleFade"
 				data-bs-slide="next"
 			>
-				{/* <span
-						className="carousel-control-next-icon"
-						aria-hidden="true"
-					></span> */}
 				<img
 					className="nextProject"
 					src="/images/slider-navi.svg"

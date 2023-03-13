@@ -2,7 +2,11 @@ import React from 'react';
 
 function Intro(props) {
 	return (
-		<div className="intro" onClick={props.handleResNavClick}>
+		<div className="homeIntro" onClick={props.hideResNav}>
+			<div className="introGraphic">
+				<img src="/images/code.svg" alt="Code illustration" />
+			</div>
+
 			<div className="introMessage">
 				<div className="greeting">
 					<h2>Hi, I'm Robin Khaoya</h2>
@@ -42,13 +46,6 @@ function Intro(props) {
 						</a>
 					</div>
 				</div>
-			</div>
-
-			<div className="introGraphic">
-				<img
-					src="/images/code.svg"
-					alt="Illustration of person coding"
-				/>
 			</div>
 		</div>
 	);
