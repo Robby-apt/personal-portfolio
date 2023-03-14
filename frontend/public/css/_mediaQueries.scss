@@ -75,7 +75,7 @@
 @media (min-width: 1260px) {
 	.homeIntro {
 		flex-direction: row-reverse;
-		margin: auto;
+		margin: auto !important;
 
 		.introMessage,
 		.introGraphic {

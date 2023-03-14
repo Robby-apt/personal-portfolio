@@ -1,10 +1,17 @@
 #home {
 	padding-bottom: 1.25rem;
+
+	.sectionContainer {
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 1.25rem);
+	}
 }
 
 .homeIntro {
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 	width: 100%;
 
 	.introGraphic {

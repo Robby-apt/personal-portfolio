@@ -1,6 +1,12 @@
 #projects {
 	@include applyVerticalPadding();
 
+	.sectionContainer {
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 2.5rem);
+	}
+
 	.slider {
 		// border: 1px solid red;
 		margin: auto 0;
