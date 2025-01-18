@@ -37,11 +37,11 @@ function Intro(props) {
 						<a href="#projects">
 							Have a look at some of my projects
 						</a>
-						<!-- <a
+{/* 						<a
 							href="/Robin_Khaoya_resume.pdf"
 							target="_blank"
 							rel="noopener norefer"
-						> -->
+						> */}
 							Have a look at my CV
 						</a>
 					</div>
