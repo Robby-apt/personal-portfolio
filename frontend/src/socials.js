@@ -4,7 +4,7 @@ const socials = [
 		classString: `fab fa-linkedin-in fa-customize`,
 	},
 	{
-		mediaLink: `https://github.com/Robby-apt`,
+		mediaLink: `https://github.co`,
 		classString: `fab fa-github fa-customize`,
 	},
 ];
