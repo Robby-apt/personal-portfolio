@@ -1,10 +1,10 @@
 const socials = [
 	{
-		mediaLink: `https://www.linkedin.com/in/robin-khaoya`,
+		mediaLink: `https://www.linkedin.com/in/robin-wafula-95a09218a/`,
 		classString: `fab fa-linkedin-in fa-customize`,
 	},
 	{
-		mediaLink: `https://github.co`,
+		mediaLink: `https://github.com/Robby-apt`,
 		classString: `fab fa-github fa-customize`,
 	},
 ];
