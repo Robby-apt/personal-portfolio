@@ -12,11 +12,11 @@ function ContactMedia() {
 					following platforms
 				</p>
 
-				<p className="contactInfo">
+				<!-- <p className="contactInfo">
 					Mobile: +254 797 943 037
 					<br />
 					Email: robin.kw99@gmail.com
-				</p>
+				</p> -->
 
 				<div className="socialMedia">
 					{socials.map((social, index) => {
