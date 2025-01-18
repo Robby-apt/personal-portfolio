@@ -1,6 +1,6 @@
 const socials = [
 	{
-		mediaLink: `https://www.linkedin.com/in/robin-khaoya-95a09218a/`,
+		mediaLink: `https://www.linkedin.com/in/robin-khaoya`,
 		classString: `fab fa-linkedin-in fa-customize`,
 	},
 	{
