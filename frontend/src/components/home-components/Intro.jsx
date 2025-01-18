@@ -37,6 +37,7 @@ function Intro(props) {
 						<a href="#projects">
 							Have a look at some of my projects
 						</a>
+						<a href="#">
 							Have a look at my CV
 						</a>
 					</div>
